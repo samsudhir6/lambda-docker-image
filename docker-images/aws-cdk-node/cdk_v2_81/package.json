@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "aws-cdk-lib": "2.81.0",
+    "constructs": "10.0.5",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7",
+    "source-map-support": "^0.5.16",
+    "env-var": "^7.1.1",
+    "@aws-sdk/client-ec2": "^3.107.0",
+    "@aws-sdk/client-ssm": "3.100.0",
+    "esbuild": "0.14.43"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.81.0",
+    "constructs": "^10.0.5",
+    "source-map-support": "^0.5.16",
+    "env-var": "^7.1.1"
+  },
+    "dependencies": {
+    "aws-lambda-ric": "^2.0.0"
+  }
+}
