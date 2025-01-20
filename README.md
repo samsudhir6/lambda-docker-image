@@ -1,10 +1,10 @@
-#Lambda Docker Image to run CDK
+# Lambda Docker Image to run CDK
 
 Running AWS Cloud Development Kit (CDK) from within an AWS Lambda function can be useful in specific scenarios where you want to programmatically trigger infrastructure changes, such as deploying or modifying resources based on events.
 
 While it's not a typical use case, you can technically trigger CDK deployments or updates from within Lambda by invoking AWS CDK's command-line interface (CLI).
 
-##Steps to create and use the lambda functions
+## Steps to create and use the lambda functions
 1. Create a simple CDK App. Refer to https://docs.aws.amazon.com/cdk/v2/guide/hello_world.html for instructions
 
 2. Once the App is created, zip the contents of the project folder.
