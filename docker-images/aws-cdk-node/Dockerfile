@@ -11,9 +11,9 @@ RUN apt-get update && \
     gpg \
     jq \
     && curl -sL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip \
-    && gpg --import aws-pub.crt \
+    # && gpg --import aws-pub.crt \
     && curl -o awscliv2.sig https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip.sig \
-    && gpg --verify awscliv2.sig awscliv2.zip \
+    # && gpg --verify awscliv2.sig awscliv2.zip \
     && unzip awscliv2.zip \
     && aws/install \
     && rm -rf \
@@ -31,6 +31,6 @@ RUN mkdir -p /var/task
 
 WORKDIR /var/task/
 
-COPY aws-cdk-node/cdk_v2_81 .
+COPY cdk_v2_81 .
 
 RUN npm install
